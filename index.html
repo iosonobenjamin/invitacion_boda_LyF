@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis & Franco - Invitación de Boda</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="invitation-container">
+    <!-- Header decorativo -->
+    <div class="header-decoration">
+      <div class="ornament-line"></div>
+    </div>
+    <!-- Sección principal de nombres -->
+    <div class="main-section">
+      <div class="wedding-announcement">
+        <p class="announcement-text">Nos Casamos</p>
+      </div>
+      <div class="couple-names">
+        <h1 class="bride-name">Luis</h1>
+        <div class="separator">
+          <span class="ampersand">&</span>
+        </div>
+        <h1 class="groom-name">Franco</h1>
+      </div>
+      <!-- Fecha principal -->
+      <div class="wedding-date">
+        <div class="date-container">
+          <span class="day-number">01</span>
+          <div class="month-year">
+            <span class="month">Octubre</span>
+            <span class="year">2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contador regresivo -->
+    <div class="countdown-section">
+      <h3 class="section-title">Faltan</h3>
+      <div class="countdown-timer">
+        <div class="countdown-item">
+          <span class="countdown-number" id="days">000</span>
+          <span class="countdown-label">Días</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="hours">00</span>
+          <span class="countdown-label">Horas</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="minutes">00</span>
+          <span class="countdown-label">Minutos</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="seconds">00</span>
+          <span class="countdown-label">Segundos</span>
+        </div>
+      </div>
+    </div>
+    <!-- Información del evento -->
+    <div class="event-details">
+      <div class="ceremony-section">
+        <h3 class="section-title">Ceremonia</h3>
+        <p class="venue-name">Lugar [Por confirmar]</p>
+        <p class="venue-address">Dirección por confirmar</p>
+        <p class="event-time">00:00 hs</p>
+      </div>
+      <div class="reception-section">
+        <h3 class="section-title">Fiesta</h3>
+        <p class="venue-name">Salón [Por confirmar]</p>
+        <p class="venue-address">Dirección por confirmar</p>
+        <p class="event-time">00:00 hs</p>
+      </div>
+    </div>
+    <!-- Código de vestimenta -->
+    <div class="dress-code">
+      <h3 class="section-title">Código de Vestimenta</h3>
+      <p class="dress-code-text">Elegante Sport</p>
+    </div>
+    <!-- Confirmación de asistencia -->
+    <div class="rsvp-section">
+      <h3 class="section-title">Confirmación de Asistencia</h3>
+      <form id="rsvpForm">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+        <button type="submit" class="confirm-btn">Confirmar Asistencia</button>
+      </form>
+      <div id="rsvpMsg"></div>
+    </div>
+    <!-- Mensaje final -->
+    <div class="final-note">
+      <p class="thank-you">¡Gracias por acompañarnos en este día tan especial!</p>
+    </div>
+    <!-- Footer decorativo -->
+    <div class="footer-decoration">
+      <div class="ornament-line"></div>
+    </div>
+  </div>
+  <script src="rsvp.js"></script>
+</body>
+</html>

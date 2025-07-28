@@ -1,0 +1,361 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f4f1ea;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 108, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(120, 119, 108, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 119, 108, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 25% 25%, rgba(139, 115, 85, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(139, 115, 85, 0.1) 1px, transparent 1px),
+    linear-gradient(135deg, #f8f5ee 0%, #f0ebe0 50%, #ede7d8 100%);
+  background-size: 300px 300px, 250px 250px, 400px 400px, 20px 20px, 30px 30px, 100% 100%;
+  background-position: 0 0, 50px 50px, 100px 100px, 0 0, 15px 15px, 0 0;
+  color: #5a4a3a;
+  min-height: 100vh;
+}
+
+.invitation-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 40px rgba(0,0,0,0.15), inset 0 0 20px rgba(201, 169, 110, 0.1);
+  border: 1px solid rgba(232, 224, 208, 0.8);
+  position: relative;
+  border-radius: 2px;
+}
+
+.header-decoration,
+.footer-decoration {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+.ornament-line {
+  width: 200px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #c9a96e, transparent);
+  margin: 0 auto;
+  position: relative;
+}
+.ornament-line::before {
+  content: '❦';
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.95);
+  color: #c9a96e;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.main-section {
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+  z-index: 1;
+}
+.wedding-announcement {
+  margin-bottom: 30px;
+}
+.announcement-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8b7355;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.couple-names {
+  margin: 40px 0;
+}
+.bride-name,
+.groom-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #6b5b73;
+  margin: 15px 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.separator {
+  margin: 20px 0;
+}
+.ampersand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #c9a96e;
+  position: relative;
+}
+
+.wedding-date {
+  margin: 50px 0;
+  padding: 30px 0;
+  border-top: 2px solid #e8e0d0;
+  border-bottom: 2px solid #e8e0d0;
+  position: relative;
+  z-index: 1;
+}
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.day-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #c9a96e;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.month-year {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.month {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #6b5b73;
+  line-height: 1.2;
+}
+.year {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #8b7355;
+  line-height: 1.2;
+}
+
+.countdown-section {
+  text-align: center;
+  margin: 50px 0;
+  padding: 30px;
+  background: rgba(250, 248, 245, 0.8);
+  border-radius: 10px;
+  border: 2px solid rgba(232, 224, 208, 0.6);
+  position: relative;
+  z-index: 1;
+}
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+.countdown-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #c9a96e;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  display: block;
+  line-height: 1;
+}
+.countdown-label {
+  font-size: 0.9rem;
+  color: #8b7355;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+.event-details {
+  margin: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 30px 0;
+  border-top: 1px solid #e8e0d0;
+  position: relative;
+  z-index: 1;
+}
+.ceremony-section,
+.reception-section {
+  text-align: center;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6b5b73;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.venue-name {
+  font-weight: 700;
+  color: #5a4a3a;
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+.venue-address,
+.event-time {
+  color: #8b7355;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.dress-code {
+  text-align: center;
+  margin: 40px 0;
+  padding: 25px;
+  background: rgba(250, 248, 245, 0.6);
+  border-left: 4px solid #c9a96e;
+  position: relative;
+  z-index: 1;
+}
+.dress-code-text {
+  font-style: italic;
+  color: #6b5b73;
+  font-size: 1.1rem;
+}
+
+.rsvp-section {
+  text-align: center;
+  margin: 40px 0;
+  padding: 30px 0;
+  border-top: 1px solid #e8e0d0;
+  position: relative;
+  z-index: 1;
+}
+#rsvpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+#rsvpForm input[type="text"] {
+  padding: 10px 16px;
+  border: 1px solid #c9a96e;
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 220px;
+  font-family: 'Lato', sans-serif;
+  background: #faf8f5;
+  color: #5a4a3a;
+  outline: none;
+  transition: border 0.2s;
+}
+#rsvpForm input[type="text"]:focus {
+  border: 1.5px solid #8b7355;
+}
+.confirm-btn {
+  display: inline-block;
+  background: #c9a96e;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.confirm-btn:hover {
+  background: #8b7355;
+}
+#rsvpMsg {
+  margin-top: 14px;
+  font-size: 1rem;
+  color: #6b5b73;
+  min-height: 24px;
+}
+
+.final-note {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+.thank-you {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #8b7355;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .invitation-container {
+    margin: 10px;
+    padding: 30px 20px;
+  }
+  .bride-name,
+  .groom-name {
+    font-size: 2.8rem;
+  }
+  .day-number {
+    font-size: 3rem;
+  }
+  .month {
+    font-size: 1.5rem;
+  }
+  .year {
+    font-size: 1.2rem;
+  }
+  .event-details {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .date-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .month-year {
+    align-items: center;
+  }
+  .countdown-timer {
+    gap: 15px;
+  }
+  .countdown-number {
+    font-size: 2rem;
+  }
+  .countdown-item {
+    min-width: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .invitation-container {
+    padding: 20px 15px;
+  }
+  .bride-name,
+  .groom-name {
+    font-size: 2.2rem;
+  }
+  .day-number {
+    font-size: 2.5rem;
+  }
+  .ornament-line {
+    width: 150px;
+  }
+  .countdown-timer {
+    gap: 10px;
+  }
+  .countdown-number {
+    font-size: 1.8rem;
+  }
+  .countdown-item {
+    min-width: 50px;
+  }
+  .countdown-section {
+    padding: 20px;
+  }
+}
