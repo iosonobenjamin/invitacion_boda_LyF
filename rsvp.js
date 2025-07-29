@@ -33,11 +33,8 @@ if (rsvpForm) {
       document.getElementById('rsvpMsg').textContent = 'Por favor, completa ambos campos.';
       return;
     }
-    fetch('https://script.google.com/macros/s/AKfycbwPXEIhGjCXYTrHMLCRVbNI3VWtO05tXMrr4oscm_bBX_b9cqpV0iJ2KXrLnbQCzOr8uQ/exec', {
-      method: 'POST',
-      body: JSON.stringify({nombre: nombre, apellido: apellido}),
-      headers: {'Content-Type': 'application/json'}
-    })
+    fetch('https://invitacion-boda-ly-f-git-main-benjamins-projects-ba0b721c.vercel.app/api/rsvp', { método: 'POST', body: JSON.stringify({nombre, apellido}), encabezados: {'Content-Type': 'application/json'}
+})
     .then(res => res.text())
     .then(data => {
       document.getElementById('rsvpMsg').textContent = '¡Gracias por confirmar tu asistencia!';
