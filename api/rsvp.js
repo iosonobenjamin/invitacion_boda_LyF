@@ -1,5 +1,9 @@
-export default async function handler(req, res) { if (req.method === 'POST') { try {  Reenvía los datos al Apps Script  const response = await fetch('https://script.google.com/macros/s/AKfycbwPXEIhGjCXYTrHMLCRVbNI3VWtO05tXMrr4oscm_bBX_b9cqpV0iJ2KXrLnbQCzOr8uQ/exec', { method: 'POST' , encabezados: { 'Content-Type': 'application/json' }, body: JSON. stringify(req.body), 
- }); if (respuesta.ok) { 
+export default async function handler(req, res) { if (req.method === 'POST') { try {  Reenvía los datos al Apps Script  const response = await fetchfetch('https://invitacion-boda-ly-f-git-main-benjamins-projects-ba0b721c.vercel.app/api/rsvp', {
+  method: 'POST',
+  body: JSON.stringify({nombre, apellido}),
+  headers: {'Content-Type': 'application/json'}
+}) 
+{ 
  res.status(200). json({ mensaje: 'OK' }); 
  } else { 
  res.status(500). json({ message: 'Error en Apps Script' }); 
